@@ -1,0 +1,23 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2D42;
+}
+
+main header {
+    background-color: #1B182D;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-grid {
+    max-width: 1760px;
+    width: 80vw;
+    margin: 0 auto;
+}
