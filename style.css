@@ -11,13 +11,19 @@ body {
 main header {
     background-color: #1B182D;
     height: 120px;
-
+    
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .container-grid {
     max-width: 1760px;
     width: 80vw;
     margin: 0 auto;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
