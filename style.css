@@ -38,6 +38,10 @@ header div {
     height: 60px;
     background-color: var(--roxo-escuro);
     border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hello_world div {
@@ -52,5 +56,15 @@ header div {
 }
 
 .hello_world p {
+    font-family: 'Consolas';
+    font-size: 20px;
     color: white;
+}
+
+div h1 {
+    font-size: 96px;
+}
+
+div h2 {
+    font-size: 48px;
 }
