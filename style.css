@@ -50,12 +50,20 @@ header div {
     height: 60px;
     background-color: var(--roxo-escuro);
     border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    background:  
+    linear-gradient(#1B182D, #1B182D) padding-box,
+    linear-gradient(-82deg, rgba(27,24,45,1) 0%, rgba(152,87,246,1) 100%) border-box
+    ;
+    border: 2px solid transparent;
 
     margin-top: 128px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .hello_world p:nth-child(2){
@@ -82,7 +90,7 @@ h2 {
     font-size: 48px;
     font-family: 'Source Code Pro';
     color: var(--branco-v);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #line {
@@ -111,7 +119,7 @@ h2 {
     background-color: var(--roxo-escuro);
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -120,8 +128,39 @@ h2 {
     font-size: 40px;
 }
 
-.icons {
-    background-color: #fff;
-    width: 1540px;
+.icons_bg {
+    background-color: var(--roxo-medio);
     height: 140px;
+
+    margin-top: 20px;
+    padding: 0 50px;
+    /* Talvez alterar para 3px*/
+    box-shadow: 
+    0px 4px 4px rgba(0, 0, 0, 0.05), 
+    0px 4px 4px rgba(0, 0, 0, 0.05), 
+    0px 4px 4px rgba(0, 0, 0, 0.05), 
+    0px 4px 4px rgba(0, 0, 0, 0.05), 
+    0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    background: linear-gradient(#34364E, #34364E) padding-box,
+    linear-gradient(-90deg, rgba(152,87,246,1) 0%, rgba(81,139,219,1) 100%) border-box
+    ;
+    border: 2px solid transparent;
+    border-width: 2px;
+    border-style: solid;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 70px;
+}
+
+i {
+    font-size: 102px;
+    color: var(--branco-v);
 }
