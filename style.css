@@ -93,6 +93,19 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    font-size: 32px;
+    font-family: 'Consolas';
+    color: var(--branco-v);
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    font-family: Inter,'Courier New', Courier, monospace;
+    color: var(--branco-v);
+}
+
 #line {
     width: 1121px;
     height: 5px;
@@ -163,4 +176,13 @@ h2 {
 i {
     font-size: 102px;
     color: var(--branco-v);
+}
+
+#about {
+    background-color: var(--roxo-medio);
+}
+
+.text {
+    width: 560px;
+    height: 328;
 }
