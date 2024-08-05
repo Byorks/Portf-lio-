@@ -180,9 +180,41 @@ i {
 
 #about {
     background-color: var(--roxo-medio);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .text {
     width: 560px;
     height: 328;
+}
+
+.bg_retangle {
+    width: 50%;
+    background-color: #fff;
+}
+
+.retangle {
+    width: 291px;
+    height: 291px;
+
+    border-radius: 10px;
+    
+    background: linear-gradient(#2B2D42, #2B2D42) padding-box,
+    linear-gradient(-90deg, rgba(152,87,246,1) 0%, rgba(81,139,219,1) 100%) border-box;
+    border: 2px solid transparent;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.retangle img {
+    position: relative;
+    width: 291px;
+    height: 291px;
+
+    border-radius: 10px;
+
+    left: -16px;
+    bottom: -22px;
 }
