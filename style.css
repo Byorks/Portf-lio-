@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato Semibold'),
-    url(fonts/Lato/) format(truetype);
+    src: local('Lato Light'),
+    url(fonts/Lato/Lato-Light.ttf) format(truetype);
 }
 
 @font-face {
@@ -31,6 +31,7 @@
     --roxo-medio:#2B2D42;
     --cor-linhas:#34364E;
     --branco-v: #FFF8F0;
+    --roxo-principal: #C455FB;
 }
 
 body {
@@ -117,6 +118,14 @@ h3 {
 }
 
 p {
+    font-size: 18px;
+    font-family: 'Ubuntu', 'Open Sans','Inter';
+    color: var(--branco-v);
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--branco-v);
     font-size: 18px;
     font-family: 'Ubuntu', 'Open Sans','Inter';
     color: var(--branco-v);
@@ -268,7 +277,20 @@ i {
     background: var(--roxo-escuro);
 }
 
-#contact > div {
+#contact .container_grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 175px 0;
+}
+
+#contact h2 {
+    font-family: 'Lato';
+    font-weight: 300;
+    
+    margin-bottom: 40px;
+}
+
+.info div {
     width: 575px;
     height: 746px;
 
@@ -279,23 +301,97 @@ form {
     height: 710px;
     width: 781px;
     border: solid red 2px;
+    border-radius: 25px;
+
     background-color: #1C1A2A;
     color: var(--branco-v);
     font-family: 'Lato';
     font-size: 20px;
 
-    display: grid;
-    justify-content: center;
-    gap: 43px;
-}
-
-.field {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2 {
+    font-size: 36px;
+}
+
+form > div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.field, textarea {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field label, .field_description label {
+    text-indent: 13px;
+    margin-bottom: 7px;
 }
 
 .field input {
-    width: 80%;
-    height: 1.5rem;
+    width: 100%;
+    height: 53px;
     background-color: var(--roxo-medio);
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    background-color: var(--roxo-medio);
+    padding: 10px 0;
+    /* Necessário porque o margin-bottom no label não estava funcionando */
+    margin-top: 7px;
+}
+
+.field input, textarea{
+    color: var(--branco-v);
+    font-family: 'Ubuntu';
+    font-size: 17px;
+    text-indent: 13px;
+
+    margin-bottom: 33px;
+    border-radius: 10px;
+}
+
+.confirm_form {
+    display: flex;
+    align-self: flex-start;
+}
+
+footer {
+    background-color: var(--roxo-medio);
+    padding: 20px 0;
+
+    border-top: 1px solid var(--cor-linhas);
+}
+
+footer h3 {
+    color: var(--roxo-principal);
+}
+
+footer .container_grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span:nth-child(1){
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+footer .container_grid span{
+    display: flex;
+    justify-content: flex-end;
+    color: yellowgreen;
 }
