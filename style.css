@@ -292,7 +292,7 @@ i {
     ;
     border: 2px solid transparent;
     border-radius: 25px;
-    
+
     padding: 30px;
 }
 
@@ -356,8 +356,8 @@ i {
 .line {
     position: absolute;
     top: 56.5px;
-    left: 475px;
-    width: 138px;
+    left: 122px;
+    width: 108px;
     height: 5px;
     /* background-color: #fff; */
     background: linear-gradient(90deg, rgba(152,87,246,0) 0%, rgba(152,87,246,1) 25%, rgba(81,139,219,1) 75%, rgba(81,139,219,0) 100%);
@@ -371,10 +371,9 @@ i {
 }
 
 .border {
+    position: relative;
     width: 333px;
     height: 334px;
-
-    background: rgba(52, 54, 78, 0.5);
 
     border-radius: 10px;
     border-width: 1px;
@@ -388,6 +387,16 @@ i {
     border: 2px solid transparent;
 }
 
+.border img {
+    position: absolute;
+    width: 333px;
+    height: 334px;  
+    left: -2px;
+    top: -1px;
+
+    padding: 3px;
+    border-radius: 10px;
+}
 
 #contact {
     background: var(--roxo-escuro);
