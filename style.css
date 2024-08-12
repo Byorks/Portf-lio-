@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu Regular';
     src: local('Ubuntu Regular'),local('Ubuntu-Regular'),
-    url(fonts/Ubuntu) format(truetype);
+    url(fonts/Ubuntu/Ubuntu-Regular.ttf) format(truetype);
 }
 
 @font-face {
@@ -131,7 +131,7 @@ a {
     color: var(--branco-v);
 }
 
-#line {
+.line_gradient {
     width: 1121px;
     height: 5px;
     background: rgb(152,87,246);
@@ -416,28 +416,56 @@ i {
     margin-bottom: 40px;
 }
 
-.info div {
+.info {
     width: 575px;
     height: 746px;
 
     border: white solid 2px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info h3 {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.info .line_gradient {
+    width: 70%;
+
+    display: flex;
+}
+
+.info .social_git svg {
+    margin-right: 32px;
 }
 
 form {
-    height: 710px;
     width: 781px;
-    border: 2px solid var(--roxo-principal) ;
     border-radius: 25px;
 
-    background-color: #1C1A2A;
     color: var(--branco-v);
     font-family: 'Lato';
     font-size: 20px;
+
+    border-width: 2px;
+    border-style: solid;
+    background:  
+    linear-gradient(#1B182D, #1B182D) padding-box,
+    linear-gradient(-45deg, rgba(27,24,45,1) 0%, rgba(152,87,246,1) 100%) border-box
+    ;
+    border: 2px solid transparent;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 59px 0;
 }
 
 form h2 {
@@ -480,17 +508,52 @@ textarea {
 
 .field input, textarea{
     color: var(--branco-v);
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu Regular';
+    font-weight: 300;
     font-size: 17px;
     text-indent: 13px;
 
     margin-bottom: 33px;
     border-radius: 10px;
+    border: none;
+}
+
+/* Pesquisar como animar*/
+.field input:focus, textarea:focus{
+    outline: none;
+    
+    background:    linear-gradient(
+        to left, 
+        rgba(196,85,251,1) 0%,
+        rgba(81,139,219,1) 100%
+      )
+      left 
+      bottom
+      #2B2D42    
+      no-repeat; 
+    background-size:100% 5px ;
+
+    animation: moving 5.s ease;
 }
 
 .confirm_form {
     display: flex;
     align-self: flex-start;
+    margin-bottom: 29px;
+}
+
+form button {
+    height: 61px;
+    width: 316px;
+
+    background-color: transparent;
+    border: solid 2px var(--roxo-principal);
+    border-radius: 10px;
+    
+    color: var(--branco-v);
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-size: 24px;
 }
 
 footer {
