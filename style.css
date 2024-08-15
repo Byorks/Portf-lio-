@@ -50,6 +50,26 @@ main header {
     align-items: center;
 }
 
+nav {
+    display: flex;
+    gap: 29px;
+}
+
+nav  button {
+    width: 196px;
+    height: 60px;
+
+    font-size: 20px;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    color: var(--branco-v);
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 1px var(--cor-linhas);
+
+}
+
 .container_grid {
     max-width: 1760px;
     width: 80vw;
