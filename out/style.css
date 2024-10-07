@@ -327,8 +327,7 @@ i {
     border-style: solid;
     background:  
     linear-gradient(#1B182D, #1B182D) padding-box,
-    linear-gradient(-45deg, rgba(27,24,45,1) 0%, rgba(152,87,246,1) 100%) border-box
-    ;
+    linear-gradient(-45deg, rgba(27,24,45,1) 0%, rgba(152,87,246,1) 100%) border-box;
     border: 2px solid transparent;
     border-radius: 25px;
 
